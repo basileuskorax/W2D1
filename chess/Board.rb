@@ -40,6 +40,10 @@ class Board
     true
   end
 
+  def over?
+    false
+  end
+
   private
   def valid_move?(pos)
     return false unless (0..7).include?(pos[0]) && (0..7).include?(pos[1])
